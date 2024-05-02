@@ -1,7 +1,10 @@
 package jpabook.jpashop.domain;
+
 import jakarta.persistence.Embeddable;
+import lombok.Getter;
 
 @Embeddable
+@Getter
 public class Address {
     private String city;
     private String street;
@@ -14,17 +17,5 @@ public class Address {
         this.city = city;
         this.street = street;
         this.zipcode = zipcode;
-    }
-
-    public String getCity() {
-        return this.city;
-    }
-
-    public String getStreet() {
-        return this.street;
-    }
-
-    public String getZipcode() {
-        return this.zipcode;
     }
 }

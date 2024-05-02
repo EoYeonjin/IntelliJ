@@ -1,110 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jpabook.jpashop.Service.MemberServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-04-27T03:34:22" hostname="userui-MacBook-Air.local" time="0.024">
+<testsuite name="jpabook.jpashop.Service.MemberServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-02T00:46:03" hostname="userui-MacBook-Air.local" time="2.239">
   <properties/>
-  <testcase name="중복_회원_예외" classname="jpabook.jpashop.Service.MemberServiceTest" time="0.024">
-    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@4203529f testClass = jpabook.jpashop.Service.MemberServiceTest, locations = [], classes = [jpabook.jpashop.JpashopApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@207ea13, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@56c9bbd8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12dae582, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a527389, org.springframework.boot.test.context.SpringBootTestAnnotation@48d07244], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@4203529f testClass = jpabook.jpashop.Service.MemberServiceTest, locations = [], classes = [jpabook.jpashop.JpashopApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@207ea13, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@56c9bbd8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12dae582, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a527389, org.springframework.boot.test.context.SpringBootTestAnnotation@48d07244], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
-	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
-	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService': Lookup method resolution failed
-	at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
-	at app//org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
-	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at app//org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
-	at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
-	at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
-	at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
-	at app//org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
-	at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
-	at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
-	at app//org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
-	at app//org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
-	at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
-	at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
-	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
-	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
-	... 55 more
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [jpabook.jpashop.Service.MemberService] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
-	... 79 more
-Caused by: java.lang.NoClassDefFoundError: jpabook/jpashop/domain/Member
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
-	... 81 more
-Caused by: java.lang.ClassNotFoundException: jpabook.jpashop.domain.Member
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
-	... 85 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[12:34:14.364 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="중복_회원_예외" classname="jpabook.jpashop.Service.MemberServiceTest" time="2.239"/>
+  <system-out><![CDATA[09:45:51.024 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -114,262 +12,520 @@ Caused by: java.lang.ClassNotFoundException: jpabook.jpashop.domain.Member
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.4)
 
-2024-04-27T12:34:15.198+09:00  INFO 14954 --- [jpashop] [    Test worker] j.jpashop.Service.MemberServiceTest      : Starting MemberServiceTest using Java 17.0.10 with PID 14954 (started by user in /Users/user/Desktop/springjpa1-v20231204/jpashop)
-2024-04-27T12:34:15.203+09:00  INFO 14954 --- [jpashop] [    Test worker] j.jpashop.Service.MemberServiceTest      : No active profile set, falling back to 1 default profile: "default"
-2024-04-27T12:34:17.247+09:00  INFO 14954 --- [jpashop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-27T12:34:17.303+09:00  INFO 14954 --- [jpashop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
-2024-04-27T12:34:18.936+09:00  INFO 14954 --- [jpashop] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-27T12:34:19.111+09:00  INFO 14954 --- [jpashop] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-27T12:34:19.192+09:00  INFO 14954 --- [jpashop] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-27T12:34:19.939+09:00  INFO 14954 --- [jpashop] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-27T12:34:20.028+09:00  INFO 14954 --- [jpashop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-27T12:34:20.326+09:00  INFO 14954 --- [jpashop] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/jpashop user=SA
-2024-04-27T12:34:20.330+09:00  INFO 14954 --- [jpashop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-27T12:34:21.854+09:00  INFO 14954 --- [jpashop] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-27T12:34:21.868+09:00  INFO 14954 --- [jpashop] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-27T12:34:21.891+09:00  WARN 14954 --- [jpashop] [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService': Lookup method resolution failed
-2024-04-27T12:34:21.892+09:00  INFO 14954 --- [jpashop] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-27T12:34:21.898+09:00  INFO 14954 --- [jpashop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-27T12:34:21.910+09:00  INFO 14954 --- [jpashop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-27T12:34:21.931+09:00  INFO 14954 --- [jpashop] [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-05-02T09:45:51.901+09:00  INFO 18802 --- [jpashop] [    Test worker] j.jpashop.Service.MemberServiceTest      : Starting MemberServiceTest using Java 17.0.10 with PID 18802 (started by user in /Users/user/Desktop/springjpa1-v20231204/jpashop)
+2024-05-02T09:45:51.908+09:00  INFO 18802 --- [jpashop] [    Test worker] j.jpashop.Service.MemberServiceTest      : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T09:45:54.174+09:00  INFO 18802 --- [jpashop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T09:45:54.262+09:00  INFO 18802 --- [jpashop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 0 JPA repository interfaces.
+2024-05-02T09:45:56.251+09:00  INFO 18802 --- [jpashop] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T09:45:56.558+09:00  INFO 18802 --- [jpashop] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T09:45:56.651+09:00  INFO 18802 --- [jpashop] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T09:45:57.217+09:00  INFO 18802 --- [jpashop] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T09:45:57.286+09:00  INFO 18802 --- [jpashop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T09:45:57.707+09:00  INFO 18802 --- [jpashop] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2024-05-02T09:45:57.711+09:00  INFO 18802 --- [jpashop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T09:45:58.477+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610758477 | took 12ms | statement | connection 1| url jdbc:h2:mem:test
+select * from INFORMATION_SCHEMA.SEQUENCES
+select * from INFORMATION_SCHEMA.SEQUENCES;
+2024-05-02T09:46:00.514+09:00  INFO 18802 --- [jpashop] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T09:46:00.550+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists category cascade 
+2024-05-02T09:46:00.555+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760555 | took 1ms | statement | connection 2| url jdbc:h2:mem:test
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-04-27T12:34:22.029+09:00 ERROR 14954 --- [jpashop] [    Test worker] o.s.boot.SpringApplication               : Application run failed
+    drop table if exists category cascade 
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService': Lookup method resolution failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.5.jar:6.1.5]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.5.jar:6.1.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42) ~[junit-vintage-engine-5.10.2.jar:5.10.2]
-	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80) ~[junit-vintage-engine-5.10.2.jar:5.10.2]
-	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72) ~[junit-vintage-engine-5.10.2.jar:5.10.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [jpabook.jpashop.Service.MemberService] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.5.jar:6.1.5]
-	... 79 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: jpabook/jpashop/domain/Member
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.5.jar:6.1.5]
-	... 81 common frames omitted
-Caused by: java.lang.ClassNotFoundException: jpabook.jpashop.domain.Member
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
-	... 85 common frames omitted
+    drop table if exists category cascade ;
+2024-05-02T09:46:00.555+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists category_item cascade 
+2024-05-02T09:46:00.559+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760559 | took 0ms | statement | connection 2| url jdbc:h2:mem:test
 
-2024-04-27T12:34:22.141+09:00  WARN 14954 --- [jpashop] [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [jpabook.jpashop.Service.MemberServiceTest@7d82ca56]
+    drop table if exists category_item cascade 
 
-java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@4203529f testClass = jpabook.jpashop.Service.MemberServiceTest, locations = [], classes = [jpabook.jpashop.JpashopApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@207ea13, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@56c9bbd8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12dae582, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7a527389, org.springframework.boot.test.context.SpringBootTestAnnotation@48d07244], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.13.2.jar:4.13.2]
-	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42) ~[junit-vintage-engine-5.10.2.jar:5.10.2]
-	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80) ~[junit-vintage-engine-5.10.2.jar:5.10.2]
-	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72) ~[junit-vintage-engine-5.10.2.jar:5.10.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberService': Lookup method resolution failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.5.jar:6.1.5]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.5.jar:6.1.5]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.5.jar:6.1.5]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.4.jar:3.2.4]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.5.jar:6.1.5]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.5.jar:6.1.5]
-	... 55 common frames omitted
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [jpabook.jpashop.Service.MemberService] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.5.jar:6.1.5]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.5.jar:6.1.5]
-	... 79 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: jpabook/jpashop/domain/Member
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.5.jar:6.1.5]
-	... 81 common frames omitted
-Caused by: java.lang.ClassNotFoundException: jpabook.jpashop.domain.Member
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
-	... 85 common frames omitted
+    drop table if exists category_item cascade ;
+2024-05-02T09:46:00.561+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists delivery cascade 
+2024-05-02T09:46:00.564+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760564 | took 2ms | statement | connection 2| url jdbc:h2:mem:test
 
+    drop table if exists delivery cascade 
+
+    drop table if exists delivery cascade ;
+2024-05-02T09:46:00.568+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists item cascade 
+2024-05-02T09:46:00.571+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760571 | took 0ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop table if exists item cascade 
+
+    drop table if exists item cascade ;
+2024-05-02T09:46:00.573+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists member cascade 
+2024-05-02T09:46:00.576+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760576 | took 0ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop table if exists member cascade 
+
+    drop table if exists member cascade ;
+2024-05-02T09:46:00.580+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists order_item cascade 
+2024-05-02T09:46:00.583+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760583 | took 0ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop table if exists order_item cascade 
+
+    drop table if exists order_item cascade ;
+2024-05-02T09:46:00.589+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists orders cascade 
+2024-05-02T09:46:00.592+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760592 | took 2ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop table if exists orders cascade 
+
+    drop table if exists orders cascade ;
+2024-05-02T09:46:00.601+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists category_seq
+2024-05-02T09:46:00.604+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760604 | took 0ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop sequence if exists category_seq
+
+    drop sequence if exists category_seq;
+2024-05-02T09:46:00.609+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists delivery_seq
+2024-05-02T09:46:00.612+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760612 | took 2ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop sequence if exists delivery_seq
+
+    drop sequence if exists delivery_seq;
+2024-05-02T09:46:00.617+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists item_seq
+2024-05-02T09:46:00.629+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760629 | took 2ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop sequence if exists item_seq
+
+    drop sequence if exists item_seq;
+2024-05-02T09:46:00.641+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists member_seq
+2024-05-02T09:46:00.642+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760642 | took 0ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop sequence if exists member_seq
+
+    drop sequence if exists member_seq;
+2024-05-02T09:46:00.646+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists order_item_seq
+2024-05-02T09:46:00.649+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760649 | took 1ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop sequence if exists order_item_seq
+
+    drop sequence if exists order_item_seq;
+2024-05-02T09:46:00.650+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists orders_seq
+2024-05-02T09:46:00.653+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760653 | took 1ms | statement | connection 2| url jdbc:h2:mem:test
+
+    drop sequence if exists orders_seq
+
+    drop sequence if exists orders_seq;
+2024-05-02T09:46:00.679+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create sequence category_seq start with 1 increment by 50
+2024-05-02T09:46:00.684+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760684 | took 4ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create sequence category_seq start with 1 increment by 50
+
+    create sequence category_seq start with 1 increment by 50;
+2024-05-02T09:46:00.685+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create sequence delivery_seq start with 1 increment by 50
+2024-05-02T09:46:00.691+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760691 | took 2ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create sequence delivery_seq start with 1 increment by 50
+
+    create sequence delivery_seq start with 1 increment by 50;
+2024-05-02T09:46:00.692+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create sequence item_seq start with 1 increment by 50
+2024-05-02T09:46:00.698+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760698 | took 3ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create sequence item_seq start with 1 increment by 50
+
+    create sequence item_seq start with 1 increment by 50;
+2024-05-02T09:46:00.702+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create sequence member_seq start with 1 increment by 50
+2024-05-02T09:46:00.707+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760706 | took 1ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create sequence member_seq start with 1 increment by 50
+
+    create sequence member_seq start with 1 increment by 50;
+2024-05-02T09:46:00.709+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create sequence order_item_seq start with 1 increment by 50
+2024-05-02T09:46:00.714+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760714 | took 3ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create sequence order_item_seq start with 1 increment by 50
+
+    create sequence order_item_seq start with 1 increment by 50;
+2024-05-02T09:46:00.715+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create sequence orders_seq start with 1 increment by 50
+2024-05-02T09:46:00.718+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760718 | took 1ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create sequence orders_seq start with 1 increment by 50
+
+    create sequence orders_seq start with 1 increment by 50;
+2024-05-02T09:46:00.731+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table category (
+        category_id bigint not null,
+        parent_id bigint,
+        name varchar(255),
+        primary key (category_id)
+    )
+2024-05-02T09:46:00.765+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760765 | took 20ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table category (
+        category_id bigint not null,
+        parent_id bigint,
+        name varchar(255),
+        primary key (category_id)
+    )
+
+    create table category (
+        category_id bigint not null,
+        parent_id bigint,
+        name varchar(255),
+        primary key (category_id)
+    );
+2024-05-02T09:46:00.769+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table category_item (
+        category_id bigint not null,
+        item_id bigint not null
+    )
+2024-05-02T09:46:00.770+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760770 | took 0ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table category_item (
+        category_id bigint not null,
+        item_id bigint not null
+    )
+
+    create table category_item (
+        category_id bigint not null,
+        item_id bigint not null
+    );
+2024-05-02T09:46:00.771+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table delivery (
+        delivery_id bigint not null,
+        city varchar(255),
+        status varchar(255) check (status in ('READY','COMP')),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (delivery_id)
+    )
+2024-05-02T09:46:00.791+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760791 | took 18ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table delivery (
+        delivery_id bigint not null,
+        city varchar(255),
+        status varchar(255) check (status in ('READY','COMP')),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (delivery_id)
+    )
+
+    create table delivery (
+        delivery_id bigint not null,
+        city varchar(255),
+        status varchar(255) check (status in ('READY','COMP')),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (delivery_id)
+    );
+2024-05-02T09:46:00.802+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table item (
+        price integer not null,
+        stock_quantity integer not null,
+        item_id bigint not null,
+        dtype varchar(31) not null,
+        actor varchar(255),
+        artist varchar(255),
+        author varchar(255),
+        director varchar(255),
+        etc varchar(255),
+        isbn varchar(255),
+        name varchar(255),
+        primary key (item_id)
+    )
+2024-05-02T09:46:00.804+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760804 | took 1ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table item (
+        price integer not null,
+        stock_quantity integer not null,
+        item_id bigint not null,
+        dtype varchar(31) not null,
+        actor varchar(255),
+        artist varchar(255),
+        author varchar(255),
+        director varchar(255),
+        etc varchar(255),
+        isbn varchar(255),
+        name varchar(255),
+        primary key (item_id)
+    )
+
+    create table item (
+        price integer not null,
+        stock_quantity integer not null,
+        item_id bigint not null,
+        dtype varchar(31) not null,
+        actor varchar(255),
+        artist varchar(255),
+        author varchar(255),
+        director varchar(255),
+        etc varchar(255),
+        isbn varchar(255),
+        name varchar(255),
+        primary key (item_id)
+    );
+2024-05-02T09:46:00.809+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table member (
+        member_id bigint not null,
+        city varchar(255),
+        name varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (member_id)
+    )
+2024-05-02T09:46:00.824+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760824 | took 14ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table member (
+        member_id bigint not null,
+        city varchar(255),
+        name varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (member_id)
+    )
+
+    create table member (
+        member_id bigint not null,
+        city varchar(255),
+        name varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (member_id)
+    );
+2024-05-02T09:46:00.835+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        primary key (order_item_id)
+    )
+2024-05-02T09:46:00.849+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760849 | took 13ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        primary key (order_item_id)
+    )
+
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        primary key (order_item_id)
+    );
+2024-05-02T09:46:00.862+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    create table orders (
+        delivery_id bigint unique,
+        member_id bigint,
+        order_date timestamp(6),
+        order_id bigint not null,
+        status varchar(255) check (status in ('ORDER','CANCEL')),
+        primary key (order_id)
+    )
+2024-05-02T09:46:00.874+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760874 | took 11ms | statement | connection 3| url jdbc:h2:mem:test
+
+    create table orders (
+        delivery_id bigint unique,
+        member_id bigint,
+        order_date timestamp(6),
+        order_id bigint not null,
+        status varchar(255) check (status in ('ORDER','CANCEL')),
+        primary key (order_id)
+    )
+
+    create table orders (
+        delivery_id bigint unique,
+        member_id bigint,
+        order_date timestamp(6),
+        order_id bigint not null,
+        status varchar(255) check (status in ('ORDER','CANCEL')),
+        primary key (order_id)
+    );
+2024-05-02T09:46:00.876+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+2024-05-02T09:46:00.907+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760907 | took 31ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category;
+2024-05-02T09:46:00.914+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+2024-05-02T09:46:00.934+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760934 | took 5ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item;
+2024-05-02T09:46:00.935+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+2024-05-02T09:46:00.954+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610760954 | took 2ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category;
+2024-05-02T09:46:00.959+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+2024-05-02T09:46:01.022+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610761022 | took 53ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item;
+2024-05-02T09:46:01.038+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+2024-05-02T09:46:01.043+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610761043 | took 3ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders;
+2024-05-02T09:46:01.043+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+2024-05-02T09:46:01.058+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610761058 | took 14ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery;
+2024-05-02T09:46:01.069+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+2024-05-02T09:46:01.090+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610761090 | took 4ms | statement | connection 3| url jdbc:h2:mem:test
+
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member;
+2024-05-02T09:46:01.104+09:00  INFO 18802 --- [jpashop] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T09:46:01.981+09:00  WARN 18802 --- [jpashop] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-02T09:46:02.098+09:00  INFO 18802 --- [jpashop] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-05-02T09:46:03.944+09:00  INFO 18802 --- [jpashop] [    Test worker] j.jpashop.Service.MemberServiceTest      : Started MemberServiceTest in 12.943 seconds (process running for 16.121)
+2024-05-02T09:46:06.028+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    select
+        m1_0.member_id,
+        m1_0.city,
+        m1_0.street,
+        m1_0.zipcode,
+        m1_0.name 
+    from
+        member m1_0 
+    where
+        m1_0.name=?
+2024-05-02T09:46:06.037+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [kim]
+2024-05-02T09:46:06.041+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610766041 | took 0ms | statement | connection 4| url jdbc:h2:mem:test
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name=?
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name='kim';
+2024-05-02T09:46:06.058+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for member_seq
+2024-05-02T09:46:06.068+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610766068 | took 2ms | statement | connection 4| url jdbc:h2:mem:test
+select next value for member_seq
+select next value for member_seq;
+2024-05-02T09:46:06.156+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-05-02T09:46:06.163+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [null]
+2024-05-02T09:46:06.163+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [null]
+2024-05-02T09:46:06.165+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [null]
+2024-05-02T09:46:06.165+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [kim]
+2024-05-02T09:46:06.165+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (5:BIGINT) <- [1]
+2024-05-02T09:46:06.169+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610766169 | took 1ms | statement | connection 4| url jdbc:h2:mem:test
+insert into member (city,street,zipcode,name,member_id) values (?,?,?,?,?)
+insert into member (city,street,zipcode,name,member_id) values (NULL,NULL,NULL,'kim',1);
+2024-05-02T09:46:06.182+09:00 DEBUG 18802 --- [jpashop] [    Test worker] org.hibernate.SQL                        : 
+    select
+        m1_0.member_id,
+        m1_0.city,
+        m1_0.street,
+        m1_0.zipcode,
+        m1_0.name 
+    from
+        member m1_0 
+    where
+        m1_0.name=?
+2024-05-02T09:46:06.194+09:00 TRACE 18802 --- [jpashop] [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [kim]
+2024-05-02T09:46:06.195+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610766195 | took 0ms | statement | connection 4| url jdbc:h2:mem:test
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name=?
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name='kim';
+2024-05-02T09:46:06.221+09:00  INFO 18802 --- [jpashop] [    Test worker] p6spy                                    : #1714610766221 | took 0ms | rollback | connection 4| url jdbc:h2:mem:test
+
+;
 ]]></system-out>
-  <system-err><![CDATA[
-
-
-============================
-CONDITIONS EVALUATION REPORT
-============================
-
-
-Positive matches:
------------------
-
-    None
-
-
-Negative matches:
------------------
-
-    None
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
